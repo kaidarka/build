@@ -67,7 +67,7 @@ p {
 .header__subtitle {
   margin-top: 15px;
   color: #000;
-  width: 500px;
+  max-width: 500px;
 }
 
 .nav {
