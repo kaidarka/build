@@ -6,25 +6,25 @@ $("#header").click(function() { // ID откуда кливаем
 });
 $("#projects").click(function() { // ID откуда кливаем
     $('html, body').animate({
-        scrollTop: $(".projects").offset().top  // класс объекта к которому приезжаем
+        scrollTop: $(".projects").offset().top -= 100 // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
     $("#header__menu, #header__burger").removeClass('active');
 });
 $("#mission").click(function() { // ID откуда кливаем
     $('html, body').animate({
-        scrollTop: $(".mission").offset().top  // класс объекта к которому приезжаем
+        scrollTop: $(".mission").offset().top -= 100 // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
     $("#header__menu, #header__burger").removeClass('active');
 });
 $("#profit").click(function() { // ID откуда кливаем
     $('html, body').animate({
-        scrollTop: $(".profit").offset().top  // класс объекта к которому приезжаем
+        scrollTop: $(".profit").offset().top -= 100 // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
     $("#header__menu, #header__burger").removeClass('active');
 });
 $("#contacts").click(function() { // ID откуда кливаем
     $('html, body').animate({
-        scrollTop: $(".contacts").offset().top  // класс объекта к которому приезжаем
+        scrollTop: $(".contacts").offset().top -= 100 // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
     $("#header__menu, #header__burger").removeClass('active');
 });
