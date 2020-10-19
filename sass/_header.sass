@@ -1,10 +1,16 @@
 body.lock
     overflow: hidden
+.fixed
+    position: fixed
+    top: 0
+    left: 2.5%
+    z-index: 10
 .header
     background: url(../img/header-bg.png) no-repeat center top
     background-size: cover
     height: 100vh
     &-text
+        z-index: 4
         position: absolute
         top: 30%
         left: 3%
@@ -82,13 +88,14 @@ body.lock
     padding-right: 15px  
     font-weight: 700
     text-shadow: 2px 3px 7px #000 
+    z-index: 4
 
 @media screen and ( max-width: 767px )
     .header
         &-text
             width: 84%
         &__burger
-            z-index: 3
+            z-index: 11
             display: block
             position: relative
             width: 30px
@@ -124,6 +131,7 @@ body.lock
                 top: 32px
         &__menu
             position: fixed
+            z-index: 100
             left: -130%
             top: 0
             opacity: 0
@@ -137,6 +145,7 @@ body.lock
             &.active
                 left: 0
                 opacity: 1
+                z-index: 10
     .nav
         &__list
             align-self: flex-start
@@ -169,3 +178,5 @@ body.lock
         width: 100%
     .nav
         border-radius: 0
+    .fixed
+        left: 0
