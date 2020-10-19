@@ -41,6 +41,10 @@ p {
   font-size: 16px;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 .header {
   background: url(../img/header-bg.png) no-repeat center top;
   background-size: cover;
@@ -570,6 +574,133 @@ p {
 @media screen and (max-width: 450px) {
   .profit__title {
     font-size: 30px;
+  }
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.contacts__line {
+  height: 300px;
+  top: 50px;
+  position: relative;
+  border: 1px solid #cf1317;
+}
+
+.form__title {
+  margin-bottom: 50px;
+}
+
+.form__input {
+  margin-bottom: 30px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 1.5 px solid #000;
+}
+
+.form__btn {
+  padding: 15px 30px;
+  border: 2px solid #cf1317;
+  background: none;
+  text-transform: uppercase;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.form__btn:hover {
+  background: #cf1317;
+  color: #ffffff;
+}
+
+.form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 500px;
+}
+
+.contacts-text {
+  margin-right: 50px;
+}
+
+.text__title {
+  margin-bottom: 50px;
+}
+
+.text__info {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text__info svg {
+  margin-right: 10px;
+}
+
+.text__info a {
+  text-decoration: none;
+  color: #000;
+}
+
+.text__info a:hover {
+  color: #cf1317;
+}
+
+@media screen and (max-width: 1100px) {
+  .contacts-text {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts__line {
+    margin-bottom: 70px;
+    width: 400px;
+    height: 0;
+  }
+  .text__title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .form__title {
+    font-size: 30px;
+  }
+  .text__title {
+    font-size: 30px;
+  }
+  .contacts {
+    padding: 30px 10px;
+  }
+  .contacts__line {
+    width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
