@@ -2,35 +2,44 @@ $("#header").click(function() { // ID откуда кливаем
     $('html, body').animate({
         scrollTop: $(".header").offset().top  // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
-    $("#header__menu, #header__burger").removeClass('active');
+    activeLock()
 });
 $("#projects").click(function() { // ID откуда кливаем
     $('html, body').animate({
         scrollTop: $(".projects").offset().top -= 100 // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
-    $("#header__menu, #header__burger").removeClass('active');
+    activeLock()
 });
 $("#mission").click(function() { // ID откуда кливаем
     $('html, body').animate({
         scrollTop: $(".mission").offset().top -= 100 // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
-    $("#header__menu, #header__burger").removeClass('active');
+    activeLock()
 });
 $("#profit").click(function() { // ID откуда кливаем
     $('html, body').animate({
         scrollTop: $(".profit").offset().top -= 100 // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
-    $("#header__menu, #header__burger").removeClass('active');
+    activeLock()
 });
 $("#contacts").click(function() { // ID откуда кливаем
     $('html, body').animate({
         scrollTop: $(".contacts").offset().top -= 100 // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
-    $("#header__menu, #header__burger").removeClass('active');
+    activeLock()
 });
+$("#contacts2").click(function() { // ID откуда кливаем
+    $('html, body').animate({
+        scrollTop: $(".contacts").offset().top -= 100 // класс объекта к которому приезжаем
+    }, 1000); // Скорость прокрутки
+});
+function activeLock() {
+    $("#header__menu, #header__burger").removeClass('active');
+    $("body").removeClass('lock');
+}
 $(function() {
     $(window).scroll(function(){
-        if($(this).scrollTop()>50){
+        if($(this).scrollTop()>10){
             $('#navigation').addClass('fixed');
         }
         else if ($(this).scrollTop()<140){

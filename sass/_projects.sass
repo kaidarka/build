@@ -16,10 +16,18 @@
         max-width: 500px
         margin: 0 auto
         margin-bottom: 50px
+        overflow: hidden
+        transform: translate(0px, 100%)
+        opacity: 0
+        transition: all .8s ease 0.5s 
+        &._active
+            transform: translate(0%, 0px)
+            opacity: 1
 
 .projects-block
     display: flex
     justify-content: space-between
+    padding: 10px 
 
 .projects-project
     position: relative
@@ -29,6 +37,12 @@
     border-radius: 10px
     display: flex
     flex-direction: column
+    transform: translate(0px, 50%)
+    opacity: 0
+    transition: transform .8s, opacity .8s, box-shadow .3s  ease 0s 
+    &._active
+        transform: translate(0%, 0px)
+        opacity: 1
     &:hover
          box-shadow: 0 0 10px rgba(59, 0, 0, 0.9)
    
@@ -80,3 +94,6 @@
         &__subtitle
             font-size: 14px
             text-align: left
+        &-project
+            transform: translate(0%, 0px)
+            opacity: 1

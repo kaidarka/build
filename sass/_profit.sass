@@ -8,6 +8,8 @@
         width: 80%
         margin: 0 auto
         position: relative
+    
+        
     &__name
         margin-bottom: 20px
     &__text
@@ -45,6 +47,12 @@
 
 .block-1
     border-left: 2px solid #cf1317
+    transform: translate(70%, 0px)
+    opacity: 0
+    transition: all .6s ease .3s
+    &._active
+        transform: translate(0%, 0px)
+        opacity: 1
     & span
         left: -50px
 
@@ -52,6 +60,12 @@
     border-right: 2px solid #cf1317
     text-align: right
     margin-left: auto
+    transform: translate(-70%, 0px)
+    opacity: 0
+    transition: all .6s ease .3s
+    &._active
+        transform: translate(0%, 0px)
+        opacity: 1
     & span
         right: -50px
 
@@ -73,3 +87,9 @@
 @media screen and ( max-width: 450px )
     .profit__title
         font-size: 30px
+    .block-1
+        transform: translate(0%, 0px)
+        opacity: 1
+    .block-2
+        transform: translate(0%, 0px)
+        opacity: 1
